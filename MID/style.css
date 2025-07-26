@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(201, 235, 248);
+}
+
+.skyblue-background {
+    padding: 30px 0 60px 0;
+}
+
+.header {
+    text-align: center;
+    color: #0c63bb;
+    /* dark blue */
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.header h3 {
+    margin: 5px 0 0 0;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.form-container.white-background {
+    background-color: white;
+    padding: 25px 30px;
+    border-radius: 8px;
+    width: 420px;
+    margin: 0 0 0 40px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.form-row label {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="date"],
+.form-row input[type="number"],
+.form-row input[type="password"],
+.form-row select,
+.form-row textarea,
+.form-row input[type="file"] {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.form-row textarea {
+    resize: vertical;
+    min-height: 50px;
+}
+
+.inline-options {
+    display: flex;
+    gap: 15px;
+}
+
+.inline-options input[type="radio"] {
+    margin-right: 6px;
+}
+
+.form-row.checkbox {
+    flex-direction: row;
+    align-items: center;
+}
+
+.form-row.checkbox input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.buttons input[type="submit"],
+.buttons input[type="reset"] {
+    background-color: #003366;
+    /* dark blue */
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.buttons input[type="submit"]:hover,
+.buttons input[type="reset"]:hover {
+    background-color: #002244;
+}
+
+@media (max-width: 500px) {
+    .form-container.white-background {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
