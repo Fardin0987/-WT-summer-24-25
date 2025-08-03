@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Donation Form</title>
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+  <div class="container">
+    <h2 style="color: red;">Donor Information</h2>     
+
+<label>First name</label><br> 
+<input type="text" id="firstName" name="firstName"> <br><br>
+
+<label>Last Name</label><br> 
+<input type="text" id="lastName" name="lastName"> <br><br>
+
+<label>Address</label><br>  
+<input type="text" id="Address" name="address"> <br><br> 
+
+<label>City</label><br> 
+<input type="text" id="City" name="city"> <br><br>
+
+<label>State</label><br> 
+<input type="text" id="State" name="state"> <br><br>
+
+
+<label>Donation Amount (BDT)</label>
+<div class="radio-group">
+  <label><input type="radio" name="amount" value="none"> None</label>
+  <label><input type="radio" name="amount" value="500"> 500</label>
+  <label><input type="radio" name="amount" value="1000"> 1000</label>
+  <label><input type="radio" name="amount" value="2000"> 2000</label>
+  <label><input type="radio" name="amount" value="3000"> 3000</label>
+  <label><input type="radio" name="amount" value="other"> Other</label>
+</div><br> 
+
+<label>Other Amounts:</label><br> 
+<input type="text" id="Amount" name="otherAmount"> <br><br>
+
+      <div class="checkbox-group">
+        <label><input type="checkbox" id="terms"> I am interested in giving on a regular basis.</label>
+      </div><br><br>
+
+      <div style="color: red;" class="additional-info">
+        Additional Information
+      </div>
+      <div class="checkbox-group">
+        <label><input type="checkbox"> I would like my gift to remain anonymous</label><br>
+        <label><input type="checkbox"> My employer offers a matching gift program</label><br>
+        <label><input type="checkbox"> Please don't send a thank you letter</label>
+      </div>
+
+      <label>Comments:</label>
+      <textarea rows="2" cols="20"></textarea>
+
+      <div class="actions">
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+
+  
+</body>
+</html>
+
